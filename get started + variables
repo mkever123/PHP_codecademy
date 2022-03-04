@@ -1,0 +1,90 @@
+#get started with PHP
+// Three statements, all with their own ;
+echo "Bob";
+echo "John";
+$var1 = "Hi";
+echo "Hi";
+Echo "Hi";
+//Both the above lines are correct in PHP/
+ 
+$var1 = 5;
+$Var1 = 10;
+// These are two different variables in PHP
+ 
+# This is also a single-line comment. THis line is also ingnored by PHP.
+ 
+/* This is a multi-line comment.
+   everything in between these two comment 
+   delimiters is ignored by PHP. */
+<html>
+  <body>
+    <?php
+      echo "Hello PHP World!";
+      ?>
+  </body>
+</html>
+
+#learn PHP variables
+$my_var = "cat";
+ 
+echo "There is one $my_var on the mat";
+ 
+/* If there were three cats, then you can type: */
+echo "There are three {$my_var}s on the mat ";
+/* The curly braces help to avoid confusion between the variable name and the letter s, so PHP does not consider the variable name as my_vars */
+$var1 = "Bob";
+
+echo "Hello,"." welcome to Codecademy!";
+// prints - Hello, welcome to Codecademy!
+$str = "Hello, ";
+$str .= "World!";
+ 
+echo $str;
+// Output: Hello, World!
+
+$original = "Ice T";
+$copy = $original;
+$orginal = "Iced Tea";
+
+echo "Hello, World!\nThis is a String!";
+/* prints-
+Hello, World!
+This is a String!
+*/
+echo $copy; // "Ice T";
+echo $var1;
+// var1 holds the value "Bob"
+ 
+$var1 = "John";
+echo $var1;
+// var1 now holds the value "John"
+
+$var1 = 5 + 6 / 2;
+/* Here, the operations to the right of the assignment operator will be carried out first. So first 6 will be divided by 2 (6 / 2 = 3). Then 3 will be added to 5 (5 + 3 = 8). Finally, the value 8 will be assigned to $var1. */
+ 
+echo $var1;
+
+// Output: 8
+$var1 = 5;
+$var2 =& $var1;
+ 
+$var1 = 6;
+echo $var2;
+
+// Output: 6
+$n = 4;
+echo 2 ** 4;
+// Output: 16
+$a = 6 / 3;
+// The variable $a will hold an integer value, since the operation evaluates to a whole number.
+ 
+$b = 7 / 3;
+// The variable $b will hold a floating point value, since the operation evaluates to a decimal number.
+$a = 9 % 2.3;
+//2.3 is converted to the integer, 2. The remainder of 9 % 2 is 1. So the variable $a will hold the integer value 1.
+ 
+$b = -19 % 4;
+//The remainder of this operation is -3. So the variable $b will hold the integer value -3.
+ 
+$c = 20 % 2;
+//The remainder of this operation is 0. So the variable $c will hold the integer value 0.
